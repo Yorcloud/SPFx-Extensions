@@ -16,7 +16,7 @@ const LOG_SOURCE: string = 'AppBarHideApplicationCustomizer';
  */
 export interface IAppBarHideApplicationCustomizerProperties {
   // This is an example; replace with your own property
-  testMessage: string;
+  elementId: string;
 }
 
 /** A Custom Action which can be run during execution of a Client Side Application */
@@ -26,7 +26,7 @@ export default class AppBarHideApplicationCustomizer
   @override
   public onInit(): Promise<void> {
 
-	const spAppBar: any = document.getElementById("sp-appBar");
+	const spAppBar: any = document.getElementById(this.properties.elementId);
 
 	Log.info(LOG_SOURCE, `Found App Bar ${spAppBar}`);
 

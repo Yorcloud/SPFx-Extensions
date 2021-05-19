@@ -19,7 +19,7 @@
         "title": "Hide the new sp-appBar",
         "description": "Hides the appBar from All Sites",
         "id": "ac500349-b385-4c6d-bfed-07ad598f83c0",
-        "version": "1.0.0.0",
+        "version": "1.0.0.1",
         "assets": {
           "elementManifests": [
             "elements.xml",

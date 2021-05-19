@@ -4,6 +4,6 @@
         Title="AppBarHide"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="e0a83e21-3916-4296-9488-79223f8df11e"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        ClientSideComponentProperties="{&quot;elementId&quot;:&quot;sp-appBar&quot;}">
     </CustomAction>
 </Elements>
