@@ -26,11 +26,11 @@ export default class AppBarHideApplicationCustomizer
   @override
   public onInit(): Promise<void> {
 
-	const spAppBar: any = document.getElementById(this.properties.elementId);
+	const spElement: any = document.getElementById(this.properties.elementId);
 
-	Log.info(LOG_SOURCE, `Found App Bar ${spAppBar}`);
+	Log.info(LOG_SOURCE, `Found Element ${spElement}`);
 
-	spAppBar.style = "display:none";
+	spElement.style = "display:none";
 
 
     return Promise.resolve();
