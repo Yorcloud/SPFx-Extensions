@@ -3,7 +3,7 @@
   "solution": {
     "name": "App Bar Hide",
     "id": "ee31fe71-b88e-4e2c-b4fd-344e4665b9ee",
-    "version": "1.0.0.0",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
     "isDomainIsolated": false,
@@ -19,7 +19,7 @@
         "title": "Hide the new sp-appBar",
         "description": "Hides the appBar from All Sites",
         "id": "ac500349-b385-4c6d-bfed-07ad598f83c0",
-        "version": "1.0.0.1",
+        "version": "1.0.0.2",
         "assets": {
           "elementManifests": [
             "elements.xml",

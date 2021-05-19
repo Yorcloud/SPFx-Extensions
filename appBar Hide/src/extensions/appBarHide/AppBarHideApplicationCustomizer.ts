@@ -1,13 +1,11 @@
-import { override } from '@microsoft/decorators';
-import { Log } from '@microsoft/sp-core-library';
-import {
-  BaseApplicationCustomizer
-} from '@microsoft/sp-application-base';
-import { Dialog } from '@microsoft/sp-dialog';
+import { override } from "@microsoft/decorators";
+import { Log } from "@microsoft/sp-core-library";
+import { BaseApplicationCustomizer } from "@microsoft/sp-application-base";
+import { Dialog } from "@microsoft/sp-dialog";
 
-import * as strings from 'AppBarHideApplicationCustomizerStrings';
+import * as strings from "AppBarHideApplicationCustomizerStrings";
 
-const LOG_SOURCE: string = 'AppBarHideApplicationCustomizer';
+const LOG_SOURCE: string = "AppBarHideApplicationCustomizer";
 
 /**
  * If your command set uses the ClientSideComponentProperties JSON input,
@@ -20,18 +18,16 @@ export interface IAppBarHideApplicationCustomizerProperties {
 }
 
 /** A Custom Action which can be run during execution of a Client Side Application */
-export default class AppBarHideApplicationCustomizer
-  extends BaseApplicationCustomizer<IAppBarHideApplicationCustomizerProperties> {
-
+export default class AppBarHideApplicationCustomizer extends BaseApplicationCustomizer<IAppBarHideApplicationCustomizerProperties> {
   @override
   public onInit(): Promise<void> {
+    if (this.properties.elementId != "") {
+      const spElement: any = document.getElementById(this.properties.elementId);
 
-	const spElement: any = document.getElementById(this.properties.elementId);
+      Log.info(LOG_SOURCE, `Found Element ${spElement}`);
 
-	Log.info(LOG_SOURCE, `Found Element ${spElement}`);
-
-	spElement.style = "display:none";
-
+      spElement.style = "display:none";
+    }
 
     return Promise.resolve();
   }
