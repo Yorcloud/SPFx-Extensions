@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "App Bar Hide",
+    "id": "ee31fe71-b88e-4e2c-b4fd-344e4665b9ee",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Yorcloud Ltd",
+      "websiteUrl": "www.yorcloud.com",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "features": [
+      {
+        "title": "Hide the new sp-appBar",
+        "description": "Hides the appBar from All Sites",
+        "id": "ac500349-b385-4c6d-bfed-07ad598f83c0",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/yorcloud appbar hide.sppkg"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "app-bar-hide-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/appBarHide/AppBarHideApplicationCustomizer.js",
+          "manifest": "./src/extensions/appBarHide/AppBarHideApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AppBarHideApplicationCustomizerStrings": "lib/extensions/appBarHide/loc/{locale}.js"
+  }
+}
