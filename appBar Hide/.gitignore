@@ -10,9 +10,10 @@ node_modules
 dist
 lib
 release
-solution
+# solution
+debug
 temp
-*.sppkg
+# *.sppkg
 
 # Coverage directory used by tools like istanbul
 coverage
