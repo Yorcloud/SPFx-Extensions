@@ -46,6 +46,7 @@ Version|Date|Comments
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
+  - **edit config with your page url **
   - **gulp serve**
 
 > Include any additional steps as needed.
