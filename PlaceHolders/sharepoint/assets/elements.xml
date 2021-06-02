@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="PlaceHolders"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="113138cd-d8c7-4753-83e6-dc692af892b1"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
