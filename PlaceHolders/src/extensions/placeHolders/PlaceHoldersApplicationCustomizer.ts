@@ -43,13 +43,15 @@ export default class PlaceHoldersApplicationCustomizer extends BaseApplicationCu
   private _onDispose(): void {}
 
   private _renderPlaceHolders(): void {
-    console.log("HelloWorldApplicationCustomizer._renderPlaceHolders()");
+
+	/*
     console.log(
       "Available placeholders: ",
       this.context.placeholderProvider.placeholderNames
         .map((name) => PlaceholderName[name])
         .join(", ")
     );
+	*/
 
     // Handling the top placeholder
     if (!this._topPlaceholder) {
