@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="GlobalCss"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="7f4f879f-0dfa-47d9-bcc3-18244934878b"
+        Properties="{&quot;cssurl&quot;:&quot;/Style%20Library/global.css&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

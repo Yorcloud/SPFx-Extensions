@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://yorcloud.sharepoint.com",
+      "customActions": {
+        "7f4f879f-0dfa-47d9-bcc3-18244934878b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "cssurl": "/Style%20Library/global.css"
+          }
+        }
+      }
+    },
+    "globalCss": {
+      "pageUrl": "https://yorcloud.sharepoint.com",
+      "customActions": {
+        "7f4f879f-0dfa-47d9-bcc3-18244934878b": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "cssurl": "/Style%20Library/global.css"
+          }
+        }
+      }
+    }
+  }
+}
