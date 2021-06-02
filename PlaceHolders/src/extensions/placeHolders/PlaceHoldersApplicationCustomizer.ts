@@ -9,6 +9,8 @@ import { Dialog } from "@microsoft/sp-dialog";
 
 import * as strings from "PlaceHoldersApplicationCustomizerStrings";
 
+import styles from "./custom.module.scss";
+
 const LOG_SOURCE: string = "PlaceHoldersApplicationCustomizer";
 
 /**
@@ -64,8 +66,11 @@ export default class PlaceHoldersApplicationCustomizer extends BaseApplicationCu
 
       if (this._topPlaceholder.domElement) {
         this._topPlaceholder.domElement.innerHTML = `
-		  <div>This is the TOP Placeholder 
-		  </div>`;
+		<div class="${styles.app}">
+		<div class="${styles.top}">
+		  <i class="ms-Icon ms-Icon--Info" aria-hidden="true"></i>This is the TOP Placeholder
+		</div>
+	  </div>`;
       }
     }
 
@@ -85,8 +90,11 @@ export default class PlaceHoldersApplicationCustomizer extends BaseApplicationCu
 
       if (this._bottomPlaceholder.domElement) {
         this._bottomPlaceholder.domElement.innerHTML = `
-		<div>This is the BOTTOM Placeholder
-		</div>`;
+		<div class="${styles.app}">
+		<div class="${styles.bottom}">
+		  <i class="ms-Icon ms-Icon--Info" aria-hidden="true"></i> This is the BOTTOM placeholder
+		</div>
+	  </div>`;
       }
     }
   }
