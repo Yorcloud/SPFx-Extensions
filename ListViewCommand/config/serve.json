@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://yorcloud.sharepoint.com/sites/yorformsdev/Lists/List%20View%20Test/AllItems.aspx",
+      "customActions": {
+        "6151b7db-8f91-49ca-9b6c-f3fc3a6a85bb": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "demo": {
+      "pageUrl": "https://yorcloud.sharepoint.com/sites/yorformsdev/Lists/List%20View%20Test/AllItems.aspx",
+      "customActions": {
+        "6151b7db-8f91-49ca-9b6c-f3fc3a6a85bb": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}
